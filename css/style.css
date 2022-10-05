@@ -1,0 +1,142 @@
+/* Variables */
+/* General */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter Tight", sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #1E232B;
+  padding: 10px;
+}
+header .logo div {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+header .navbar {
+  display: none;
+}
+
+/* Main */
+main {
+  background-color: #D5D5D5;
+}
+
+/* Landing Page */
+section.landingpage .intro {
+  display: flex;
+  justify-content: space-evenly;
+  background: linear-gradient(90deg, #1E232B 0%, #34383F 50%, #1E232B 100%);
+  background-size: 400% 400%;
+  animation: gradient 25s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+section.landingpage .intro .headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+}
+section.landingpage .intro .headline h1 {
+  padding: 0px 0px 20px 0px;
+  color: #FFC847;
+}
+section.landingpage .intro .headline p {
+  color: #D5D5D5;
+}
+section.landingpage .intro .profilepic {
+  display: flex;
+  justify-content: center;
+  width: 33%;
+}
+section.landingpage .intro .profilepic img {
+  width: 60%;
+  padding: 5%;
+  border-radius: 35%;
+}
+section.landingpage .aboutme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.landingpage .aboutme h2 {
+  color: #1E232B;
+}
+section.landingpage .aboutme div.description {
+  width: 50%;
+  padding: 10px 0px 20px 0px;
+}
+section.landingpage .aboutme div.description p {
+  text-align: center;
+}
+section.landingpage .aboutme div.skills {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+section.landingpage .aboutme div.skills h3 {
+  text-align: center;
+}
+section.landingpage .aboutme div.skills div.skillsicons ul {
+  display: flex;
+  list-style: none;
+}
+section.landingpage .aboutme div.skills div.skillsicons ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 18px;
+  font-size: 3rem;
+  width: 100%;
+}
+section.landingpage .aboutme div.skills div.skillsicons ul li span {
+  padding-top: 12px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Menu */
+/* About me */
+.aboutme div {
+  display: flex;
+  justify-content: center;
+}
+.aboutme div img {
+  width: 50%;
+}
+
+/* Projects */
+.projects div {
+  display: flex;
+  justify-content: center;
+}
+.projects div ul {
+  list-style: none;
+}
+
+/* Contact */
+.contact div {
+  display: flex;
+  justify-content: center;
+}
+.contact div ul {
+  list-style: none;
+}/*# sourceMappingURL=style.css.map */
