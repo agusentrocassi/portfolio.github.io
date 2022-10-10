@@ -5,22 +5,63 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter Tight", sans-serif;
 }
 
+h2 {
+  text-align: center;
+  padding: 1rem;
+  color: #1E232B;
+}
+
+.button {
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0px;
+  width: 50%;
+  border: 1px solid #1E232B;
+  background-color: #FFC847;
+}
+.button a {
+  color: #1E232B;
+  text-decoration: none;
+}
+
+.yellow-span {
+  color: #FFC847;
+}
+
 /* Header */
 header {
-  background-color: #1E232B;
-  padding: 10px;
-}
-header .logo div {
   display: flex;
-  justify-content: center;
-  font-size: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #1E232B;
+}
+header .logo h1 {
+  color: #D5D5D5;
 }
 header .navbar {
-  display: none;
+  width: 50%;
+}
+header .navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px;
+  list-style: none;
+}
+header .navbar ul li {
+  padding: 10px 25px;
+}
+header .navbar ul li a {
+  color: #D5D5D5;
+  text-decoration: none;
 }
 
 /* Main */
@@ -54,7 +95,7 @@ section.landingpage .intro .headline {
   justify-content: center;
   width: 33%;
 }
-section.landingpage .intro .headline h1 {
+section.landingpage .intro .headline h2 {
   padding: 0px 0px 20px 0px;
   color: #FFC847;
 }
@@ -77,29 +118,26 @@ section.landingpage .aboutme {
   justify-content: center;
   align-items: center;
 }
-section.landingpage .aboutme h2 {
-  color: #1E232B;
-}
-section.landingpage .aboutme div.description {
+section.landingpage div.description {
   width: 50%;
   padding: 10px 0px 20px 0px;
 }
-section.landingpage .aboutme div.description p {
+section.landingpage div.description p {
   text-align: center;
 }
-section.landingpage .aboutme div.skills {
+section.landingpage div.skills {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
 }
-section.landingpage .aboutme div.skills h3 {
+section.landingpage div.skills h3 {
   text-align: center;
 }
-section.landingpage .aboutme div.skills div.skillsicons ul {
+section.landingpage div.skills div.skillsicons ul {
   display: flex;
   list-style: none;
 }
-section.landingpage .aboutme div.skills div.skillsicons ul li {
+section.landingpage div.skills div.skillsicons ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,36 +145,106 @@ section.landingpage .aboutme div.skills div.skillsicons ul li {
   font-size: 3rem;
   width: 100%;
 }
-section.landingpage .aboutme div.skills div.skillsicons ul li span {
+section.landingpage div.skills div.skillsicons ul li span {
   padding-top: 12px;
   font-size: 1rem;
   text-align: center;
 }
 
-/* Menu */
-/* About me */
-.aboutme div {
-  display: flex;
-  justify-content: center;
-}
-.aboutme div img {
-  width: 50%;
-}
-
 /* Projects */
-.projects div {
+.projects {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.projects div ul {
-  list-style: none;
+.projects .card-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+  padding: 15px;
+  background-color: #34383F;
+  border: 1px solid #1E232B;
+}
+.projects .card-project h3 {
+  padding: 0.4rem 0.8rem 0.8rem;
+  text-align: center;
+  color: #FFC847;
+}
+.projects .card-project p {
+  color: #D5D5D5;
+  text-align: center;
+  padding-bottom: 0.8rem;
 }
 
 /* Contact */
-.contact div {
+.contact {
+  background-color: #1E232B;
+  padding-bottom: 20px;
+}
+.contact .h2-contact {
   display: flex;
   justify-content: center;
+  margin: 20px;
+  border-bottom: 2px solid #34383F;
 }
-.contact div ul {
+.contact .h2-contact h2 {
+  color: #D5D5D5;
+}
+.contact .contacts-section {
+  display: flex;
+  justify-content: space-around;
+}
+.contact .contacts-section div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 25%;
+}
+.contact .contacts-section .left-contacts {
+  border: 2px solid #34383F;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+}
+.contact .contacts-section .left-contacts h3 {
+  margin: 15px 0px;
+  color: #FFC847;
+}
+.contact .contacts-section .left-contacts p {
+  text-align: center;
+  padding: 5px 50px;
+  color: #D5D5D5;
+}
+.contact .contacts-section .right-contacts ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px;
   list-style: none;
+}
+.contact .contacts-section .right-contacts ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 15px;
+  padding: 10px;
+  color: #D5D5D5;
+  border: 2px solid #34383F;
+}
+.contact .contacts-section .right-contacts ul li i {
+  color: #FFC847;
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+/* Footer */
+footer {
+  background-color: #1E232B;
+  border-top: 2px solid #34383F;
+  padding: 20px;
+}
+footer p {
+  color: #D5D5D5;
 }/*# sourceMappingURL=style.css.map */

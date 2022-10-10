@@ -16,16 +16,17 @@
 
         <section class="logo">
             <div>
-                <i class="fa-solid fa-code"></i>
+                <h1>Agustín Entrocassi</h1>
             </div>
         </section>
         
         <section class="navbar">
             <div>
                 <ul>
-                    <li>Sobre mí</li>
-                    <li>Proyectos</li>
-                    <li>Contacto</li>
+                    <li><a href="#landingpage">Inicio</a></li>
+                    <li><a href="#aboutme">Sobre mí</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
                 </ul>
             </div>
         </section>
@@ -33,13 +34,13 @@
     </header>    
     <main>
 
-        <section class ="landingpage">
+        <section class ="landingpage" id="landingpage">
             
             <article class="intro">
 
                 <div class="headline">
                     <p>¡Hola! Soy</p>
-                    <h1>Agustín Entrocassi</h1>
+                    <h2>Agustín Entrocassi</h2>
                     <p>Software Developer</p>
                     <p>Estudiante de Certified Tech Developer</p>
                 </div>
@@ -51,7 +52,7 @@
 
             </article>
                 
-            <article class="aboutme">
+            <article class="aboutme" id="aboutme">
                 
                 <div>
                     <h2>Sobre mí</h2>
@@ -79,42 +80,49 @@
 
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
 
             <div>
                 <h2>Proyectos</h2>    
             </div>
 
-            <div>
-                <ul>
-                    <li>Proyecto 1</li>
-                    <li>Proyecto 2</li>
-                    <li>Proyecto 3</li>
-                </ul>
+            <div class="card-project">
+                <h3>TP Final: Frontend 1</h3>
+                <p>Maquetado de una página web estática utilizando HTML y CSS, mediante el uso de wireframes provistos en Figma. El diseño es responsive, y la página cuenta con pequeñas animaciones. </p>
+                <div class="button"><a href="http://">Ver más</a></div>
             </div>
 
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
 
-            <div>
+            <div class="h2-contact">
                 <h2>Contacto</h2>
             </div>
 
-            <div>
-                <ul>
-                    <li>Instagram</li>
-                    <li>Linkedin</li>
-                    <li>Github</li>
-                    <li>Email</li>
-                </ul>
-            </div>
-            
+            <article class="contacts-section">
+                
+                <div class="left-contacts">
+                    <h3>Mi motivación</h3>
+                    <p>Busco pertenecer a un equipo de trabajo creativo y responsable, con miembros con los que pueda colaborar para la búsqueda de alternativas desde múltiples puntos de vista para nuestros problemas. Adempás de lo que sé en base a mis conocimientos de desarrollador, puedo sumar una mirada aparte a la común, reforzada por conocimientos previos que van desde la Administración de Empresas, hasta la fotografía profesional.</p>
+                    <p>Para conectarnos, te dejo mis links a la derecha.</p>
+                </div>
+                
+                <div class="right-contacts">
+                    <ul>
+                        <li><a href="http://https://www.linkedin.com/in/agustinentrocassi/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>LinkedIn</li>
+                        <li><a href="https://github.com/agusentrocassi" target="_blank"><i class="fa-brands fa-square-github"></i></a> Github</li>
+                        <li><i class="fa-solid fa-at"></i>agustinentrocassi@gmail.com</li>
+                    </ul>
+                </div>
+
+            </article>
+
         </section> 
 
     </main>
     <footer>
-       <p>Hecho por Agustín Entrocassi. 2022.</p> 
+       <p>Hecho por <span class="yellow-span">Agustín Entrocassi</span>. 2022.</p> 
     </footer>
 </body>
 </html>
