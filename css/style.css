@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -23,6 +24,7 @@ h2 {
   text-align: center;
   border-radius: 5px;
   padding: 5px 0px;
+  margin-top: 10px;
   width: 50%;
   border: 1px solid #1E232B;
   background-color: #FFC847;
@@ -41,7 +43,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   background-color: #1E232B;
 }
 header .logo h1 {
@@ -75,7 +77,7 @@ section.landingpage .intro {
   justify-content: space-evenly;
   background: linear-gradient(90deg, #1E232B 0%, #34383F 50%, #1E232B 100%);
   background-size: 400% 400%;
-  animation: gradient 25s ease infinite;
+  animation: gradient 20s ease infinite;
 }
 @keyframes gradient {
   0% {
@@ -127,11 +129,16 @@ section.landingpage div.description p {
 }
 section.landingpage div.skills {
   display: flex;
+  align-items: center;
   flex-direction: column;
   width: 90%;
 }
 section.landingpage div.skills h3 {
   text-align: center;
+}
+section.landingpage div.skills div.skillsicons {
+  width: 50%;
+  margin-top: 20px;
 }
 section.landingpage div.skills div.skillsicons ul {
   display: flex;
@@ -206,8 +213,14 @@ section.landingpage div.skills div.skillsicons ul li span {
   margin-bottom: 15px;
   padding-bottom: 20px;
 }
-.contact .contacts-section .left-contacts h3 {
-  margin: 15px 0px;
+.contact .contacts-section .left-contacts div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0px 30px 12px;
+  border-bottom: 1px solid #34383F;
+}
+.contact .contacts-section .left-contacts div h3 {
   color: #FFC847;
 }
 .contact .contacts-section .left-contacts p {
