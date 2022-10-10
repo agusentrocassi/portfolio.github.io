@@ -16,8 +16,9 @@ body {
 
 h2 {
   text-align: center;
-  padding: 1rem;
+  padding: 25px;
   color: #1E232B;
+  font-size: 2rem;
 }
 
 .button {
@@ -40,6 +41,8 @@ h2 {
 
 /* Header */
 header {
+  position: sticky;
+  top: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,6 +75,9 @@ main {
 }
 
 /* Landing Page */
+section.landingpage {
+  padding-bottom: 20px;
+}
 section.landingpage .intro {
   display: flex;
   justify-content: space-evenly;
@@ -100,9 +106,12 @@ section.landingpage .intro .headline {
 section.landingpage .intro .headline h2 {
   padding: 0px 0px 20px 0px;
   color: #FFC847;
+  font-size: 2rem;
 }
 section.landingpage .intro .headline p {
   color: #D5D5D5;
+  font-size: 1.5rem;
+  text-align: center;
 }
 section.landingpage .intro .profilepic {
   display: flex;
@@ -111,8 +120,9 @@ section.landingpage .intro .profilepic {
 }
 section.landingpage .intro .profilepic img {
   width: 60%;
-  padding: 5%;
+  margin: 5%;
   border-radius: 35%;
+  border: 1px solid #D5D5D5;
 }
 section.landingpage .aboutme {
   display: flex;
@@ -163,6 +173,17 @@ section.landingpage div.skills div.skillsicons ul li span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #34383F;
+  border-top: 1px solid #1E232B;
+  border-bottom: 1px solid #D5D5D5;
+}
+.projects .h2-projects {
+  width: 95%;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #D5D5D5;
+}
+.projects .h2-projects h2 {
+  color: #FFC847;
 }
 .projects .card-project {
   display: flex;
@@ -170,18 +191,21 @@ section.landingpage div.skills div.skillsicons ul li span {
   align-items: center;
   width: 15%;
   padding: 15px;
-  background-color: #34383F;
-  border: 1px solid #1E232B;
+  margin-bottom: 25px;
+  border-radius: 25px;
+  background-color: #1E232B;
+  border: 1px solid #D5D5D5;
 }
 .projects .card-project h3 {
-  padding: 0.4rem 0.8rem 0.8rem;
+  margin-bottom: 10px;
+  padding: 10px;
   text-align: center;
   color: #FFC847;
 }
 .projects .card-project p {
   color: #D5D5D5;
   text-align: center;
-  padding-bottom: 0.8rem;
+  padding-bottom: 10px;
 }
 
 /* Contact */
@@ -192,7 +216,7 @@ section.landingpage div.skills div.skillsicons ul li span {
 .contact .h2-contact {
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin-bottom: 30px;
   border-bottom: 2px solid #34383F;
 }
 .contact .h2-contact h2 {
