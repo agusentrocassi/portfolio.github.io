@@ -141,6 +141,11 @@ section.landingpage {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        div.h2-aboutme {
+            width: 95%;
+            border-bottom: 1px solid $base-dark;
+            margin-bottom: 30px;
+        }
         }
         div.description {
             width: 50%;
@@ -253,7 +258,8 @@ section.landingpage {
                 display: flex;
                 align-items: center;
                 width: 100%;
-                margin: 0px 30px 12px;
+                margin: 0px 30px 20px;
+                padding: 10px;
                 border-bottom: 1px solid $base-grey;
                 h3 {
                     color: $base-yellow;
